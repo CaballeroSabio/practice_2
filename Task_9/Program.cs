@@ -5,5 +5,24 @@
 // 12-> 2
 // 85 -> 8
 
+Console.Clear();
 Console.WriteLine("Hello, World!");
+// int num = new Random().Next(10,100);
+// int firstDigit = num / 10;
+// int secondDigit = num % 10;
+// if (firstDigit == secondDigit) Console.WriteLine("Цифры одинаковые");
+// if (firstDigit > secondDigit) Console.WriteLine($"{num} -> {firstDigit}");
+// else Console.WriteLine($"{num} -> {secondDigit}");
 
+int MaxDigit(int num);
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    if (firstDigit == secondDigit) return 0;
+    if (firstDigit > secondDigit) return firstDigit;
+    return secondDigit;
+}
+
+int maxDigit = MaxDigit(num);
+if(maxDigit == 0) Console.WriteLine($"{num} -> Цифры одинаковые");
+else Console.WriteLine(${num}={maxDigit});
