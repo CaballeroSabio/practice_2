@@ -22,6 +22,6 @@ else
 {
     Console.WriteLine("There is no third digit in the given number");
 }
-// Console.WriteLine($"The third digit of the given number is {arrayOfInputInteger[2]}");
+
 Console.WriteLine("Goodbye, User!");
 Console.WriteLine();
